@@ -1,0 +1,162 @@
+﻿<Page x:Class="The_Song_Mind.Pages.RhythmDevPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:The_Song_Mind.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="RhythmDevPage">
+
+    <Page.Resources>
+        <Style x:Key="{x:Type ToggleButton}" TargetType="{x:Type ToggleButton}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="FontSize" Value="50" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Padding" Value="10"/>
+        </Style>
+        <Style x:Key="{x:Type Button}" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="FontSize" Value="60" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+        </Style>
+        <Style x:Key="{x:Type TextBlock}" TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="FontSize" Value="100" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="{x:Type Polygon}" TargetType="{x:Type Polygon}">
+            <Setter Property="Fill" Value="White" />
+            <Setter Property="StrokeThickness" Value="10" />
+            <Setter Property="Stroke" Value="Black" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="StrokeLineJoin" Value="Round" />
+        </Style>
+        <Style x:Key="{x:Type Polyline}" TargetType="{x:Type Polyline}">
+            <Setter Property="StrokeThickness" Value="10" />
+            <Setter Property="Stroke" Value="Black" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="StrokeLineJoin" Value="Round" />
+            <Setter Property="StrokeDashArray" Value="4.5 3" />
+        </Style>
+    </Page.Resources>
+    
+    <StackPanel>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Make Chord Rhythm" FontSize="120" Margin="40 0" HorizontalAlignment="Left"/>
+            <Button Grid.Column="1" Content="Back" Margin="350 40 40 20" Click="Back_Click"/>
+        </Grid>
+        
+        
+        <!--Rhythm dev grid-->
+        <Grid x:Name="rhythmGrid" Margin="10" Height="550">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="0" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="1" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="2" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="3" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="4" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="5" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="6" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="7" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="8" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="9" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="10" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="11" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="12" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="13" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="14" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="15" Grid.Row="0"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="0" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="1" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="2" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="3" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="4" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="5" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="6" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="7" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="8" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="9" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="10" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="11" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="12" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="13" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="14" Grid.Row="1"/>
+            <Rectangle Fill="Transparent" Stroke="Black" StrokeThickness="5" Grid.Column="15" Grid.Row="1"/>
+            <TextBlock Text="1" Grid.Column="0" Grid.Row="0"/>
+            <TextBlock Text="+" Grid.Column="2" Grid.Row="0"/>
+            <TextBlock Text="2" Grid.Column="4" Grid.Row="0"/>
+            <TextBlock Text="+" Grid.Column="6" Grid.Row="0"/>
+            <TextBlock Text="3" Grid.Column="8" Grid.Row="0"/>
+            <TextBlock Text="+" Grid.Column="10" Grid.Row="0"/>
+            <TextBlock Text="4" Grid.Column="12" Grid.Row="0"/>
+            <TextBlock Text="+" Grid.Column="14" Grid.Row="0"/>
+            <ToggleButton x:Name="Beat1" Click="Beat_Click" Grid.Column="0" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat2" Click="Beat_Click" Grid.Column="1" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat3" Click="Beat_Click" Grid.Column="2" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat4" Click="Beat_Click" Grid.Column="3" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat5" Click="Beat_Click" Grid.Column="4" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat6" Click="Beat_Click" Grid.Column="5" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat7" Click="Beat_Click" Grid.Column="6" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat8" Click="Beat_Click" Grid.Column="7" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat9" Click="Beat_Click" Grid.Column="8" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat10" Click="Beat_Click"  Grid.Column="9" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat11" Click="Beat_Click"  Grid.Column="10" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat12" Click="Beat_Click"  Grid.Column="11" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat13" Click="Beat_Click"  Grid.Column="12" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat14" Click="Beat_Click"  Grid.Column="13" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat15" Click="Beat_Click"  Grid.Column="14" Grid.Row="1"/>
+            <ToggleButton x:Name="Beat16" Click="Beat_Click"  Grid.Column="15" Grid.Row="1"/>
+        </Grid>
+
+        <Grid Margin="0 140 0 0" Width="1200" HorizontalAlignment="Left">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Common Rhythms:" FontSize="80" Grid.Column="0"/>
+            <Button x:Name="Rhythm1" Content="1" BorderBrush="Transparent" FontSize="80" Grid.Column="1" Click="Rhythm1_Click"/>
+            <Button x:Name="Rhythm2" Content="2" BorderBrush="Transparent" FontSize="80" Grid.Column="2" Click="Rhythm2_Click"/>
+            <Button x:Name="Rhythm3" Content="3" BorderBrush="Transparent" FontSize="80" Grid.Column="3" Click="Rhythm3_Click"/>
+            <Button x:Name="Rhythm4" Content="4" BorderBrush="Transparent" FontSize="80" Grid.Column="4" Click="Rhythm4_Click"/>
+        </Grid>
+    </StackPanel>
+</Page>

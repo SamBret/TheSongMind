@@ -1,0 +1,65 @@
+﻿<Page x:Class="The_Song_Mind.Pages.OptionsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:The_Song_Mind.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      KeyDown="OnKeyDown"
+      Title="OptionsPage">
+
+    <!--Default Buttons-->
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="80" />
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Padding" Value="15 0" />
+        </Style>
+    </Page.Resources>
+
+    <StackPanel>
+        <!--Create title and Back Button-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Options" FontWeight="Bold" FontSize="130" Margin="50 0"/>
+            <Button Grid.Column="1" Click="Back_Click" Content="Back" HorizontalContentAlignment="Center" Margin="700 0 50 0"/>
+        </Grid>
+
+        <!--Volume slider subheading-->
+        <TextBlock Text="Volume" FontWeight="Bold" FontSize="80" Margin="50 10"/>
+        
+        <!--Volume slider-->
+        <Slider x:Name="VolumeSlider" ValueChanged="Volume_ValueChanged" Maximum="10" TickFrequency="1" IsSnapToTickEnabled="True" BorderThickness="5" Cursor="Hand" Margin="50 5 1000 5"/>
+
+        <!--Shortcut change subheading-->
+        <TextBlock Text="Shortcuts" FontWeight="Bold" FontSize="80" Margin="50 5"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel>
+                <!--Shortcut change buttons-->
+                <Button x:Name="CutShortcut" Margin="50 5" Click="CutShortcut_Click"/>
+                <Button x:Name="CopyShortcut" Margin="50 5" Click="CopyShortcut_Click"/>
+                <Button x:Name="PasteShortcut" Margin="50 5" Click="PasteShortcut_Click"/>
+                <Button x:Name="DuplicateShortcut" Margin="50 5" Click="DuplicateShortcut_Click"/>
+                <Button x:Name="UndoShortcut" Margin="50 5" Click="UndoShortcut_Click"/>
+                <Button x:Name="RedoShortcut" Margin="50 5" Click="RedoShortcut_Click"/>
+            </StackPanel>
+            <Button Grid.Column="1" Click="SaveChanges_Click" Content="Save Changes" HorizontalContentAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="50 0"/>
+        </Grid>
+    </StackPanel>
+</Page>

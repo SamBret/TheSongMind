@@ -1,0 +1,32 @@
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\bin\Debug\The Song Mind.exe.config
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\bin\Debug\The Song Mind.exe
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\bin\Debug\The Song Mind.pdb
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind.csprojAssemblyReference.cache
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\App.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind_MarkupCompile.cache
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind_MarkupCompile.lref
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind.g.resources
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The_Song_Mind.Properties.Resources.resources
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind.csproj.GenerateResource.cache
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind.exe
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind.pdb
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\MainMenuPage.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\NewSongPage.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\MainMenuPage.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\NewSongPage.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\MainWindow.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\MainWindow.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind.csproj.Fody.CopyLocal.cache
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\OptionsPage.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\OptionsPage.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\MainDevPage.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\MainDevPage.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\MelodyDevPage.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\RhythmDevPage.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\MelodyDevPage.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\Pages\RhythmDevPage.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\KeyChangeWindow.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\KeyChangeWindow.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\TimeChangeWindow.g.cs
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\TimeChangeWindow.baml
+C:\Users\samja\Documents\Programming\WPF Apps\TheSongMind\The Song Mind\The Song Mind\obj\Debug\The Song Mind.csproj.CoreCompileInputs.cache

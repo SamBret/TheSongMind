@@ -1,0 +1,40 @@
+﻿<Page x:Class="The_Song_Mind.Pages.MainMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="MainMenuPage">
+    
+    <!--Default Buttons-->
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="FontSize" Value="80" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Padding" Value="30 10" />
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+        <!--Define bottom and top as separate elements-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <!--Create title-->
+        <TextBlock Grid.Row="0" Text="The Song Mind" FontWeight="Bold" FontSize="200" Margin="50 0"/>
+
+        <!--Create front page buttons-->
+        <StackPanel Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <Button x:Name="NewSong" Click="NewSong_Click" Content="New Song" Margin="20 10" Cursor="Hand"/>
+            <Button x:Name="ContinueSong" Click="ContinueSong_Click" Content="Continue Song" Margin="20 10" Cursor="Hand"/>
+            <Button x:Name="Options" Click="Options_Click" Content="Options" Margin="20 10 20 20" Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Page>

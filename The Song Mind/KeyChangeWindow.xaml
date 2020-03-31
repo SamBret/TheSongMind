@@ -1,0 +1,73 @@
+﻿<Window x:Class="The_Song_Mind.KeyChangeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:The_Song_Mind"
+        mc:Ignorable="d"
+        Title="KeyChangeWindow" Height="450" Width="800">
+
+    <!--Default Buttons-->
+    <Window.Resources>
+        <Style TargetType="ToggleButton">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="60" />
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
+    </Window.Resources>
+
+    <StackPanel>
+        <!--Choose key subheading-->
+        <TextBlock Text="Choose key:" FontWeight="Bold" FontSize="60" Margin="30 10"/>
+
+        <!--Button grid for key note selection-->
+        <Grid x:Name="KeyNoteSelect">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Buttons for key note selection-->
+            <ToggleButton x:Name="AKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="0" Content="A" Margin="20 0 0 0"/>
+            <ToggleButton x:Name="BbKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="1" Content="Bb"/>
+            <ToggleButton x:Name="BKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="2" Content="B"/>
+            <ToggleButton x:Name="CKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="3" Content="C"/>
+            <ToggleButton x:Name="DbKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="4" Content="Db"/>
+            <ToggleButton x:Name="DKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="5" Content="D"/>
+            <ToggleButton x:Name="EbKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="6" Content="Eb"/>
+            <ToggleButton x:Name="EKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="7" Content="E"/>
+            <ToggleButton x:Name="FKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="8" Content="F"/>
+            <ToggleButton x:Name="GbKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="9" Content="Gb"/>
+            <ToggleButton x:Name="GKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="10" Content="G"/>
+            <ToggleButton x:Name="AbKey" Checked="Key_Note_Checked" Unchecked="Key_Note_Unchecked" Grid.Column="11" Content="Ab"/>
+        </Grid>
+
+        <!--Button grid for tonality selection-->
+        <Grid x:Name="KeyTonalSelect" Margin="0 10 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Buttons for key tonality selection-->
+            <ToggleButton x:Name="Major" Checked="Major_Checked" Unchecked="Major_Unchecked" Grid.Column="0" Content="Major" Margin="20 0 0 0"/>
+            <ToggleButton x:Name="Minor" Checked="Minor_Checked" Unchecked="Minor_Unchecked" Grid.Column="1" Content="Minor"/>
+        </Grid>
+
+        <Button x:Name="Confirm" Click="Confirm_Click" Content="Confirm Change" Background="White" BorderThickness="5" BorderBrush="Black" FontSize="40" FontWeight="Bold" Margin="50 80 50 0"/>
+    </StackPanel>
+</Window>

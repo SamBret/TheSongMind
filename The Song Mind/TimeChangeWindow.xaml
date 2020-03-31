@@ -1,0 +1,50 @@
+﻿<Window x:Class="The_Song_Mind.TimeChangeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:The_Song_Mind"
+        mc:Ignorable="d"
+        Title="TimeChangeWindow" Height="450" Width="800">
+
+    <!--Default Buttons-->
+    <Window.Resources>
+        <Style TargetType="ToggleButton">
+            <Setter Property="Background" Value="White" />
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="FontSize" Value="30" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Height" Value="80" />
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
+    </Window.Resources>
+
+    <StackPanel>
+        <!--Choose key subheading-->
+        <TextBlock Text="Choose key:" FontWeight="Bold" FontSize="60" Margin="30 10"/>
+
+        <!--Button grid for key note selection-->
+        <Grid x:Name="KeyNoteSelect">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Buttons for time signature selection-->
+            <ToggleButton x:Name="TF" Checked="Time_Sig_Checked" Unchecked="Time_Sig_Unchecked" Grid.Column="0" Content="2/4" Margin="20 0 0 0"/>
+            <ToggleButton x:Name="HF" Checked="Time_Sig_Checked" Unchecked="Time_Sig_Unchecked" Grid.Column="1" Content="3/4"/>
+            <ToggleButton x:Name="FF" Checked="Time_Sig_Checked" Unchecked="Time_Sig_Unchecked" Grid.Column="2" Content="4/4"/>
+            <ToggleButton x:Name="SE" Checked="Time_Sig_Checked" Unchecked="Time_Sig_Unchecked" Grid.Column="3" Content="6/8"/>
+            <ToggleButton x:Name="NE" Checked="Time_Sig_Checked" Unchecked="Time_Sig_Unchecked" Grid.Column="4" Content="9/8"/>
+            <ToggleButton x:Name="WE" Checked="Time_Sig_Checked" Unchecked="Time_Sig_Unchecked" Grid.Column="5" Content="12/8"/>
+        </Grid>
+
+        <Button x:Name="Confirm" Click="Confirm_Click" Content="Confirm Change" Background="White" BorderThickness="5" BorderBrush="Black" FontSize="40" FontWeight="Bold" Margin="50 130 50 0"/>
+    </StackPanel>
+</Window>
